@@ -18,7 +18,8 @@ const reducer = (state = initialState, action) => {
       // newArray.splice(id, 1)
       const updatedArray = state.results.filter(result => result.id !== action.resultElId);
       return {
-        ...state,
+		...state,
+		results: updatedArray
       }
   }
   return state;
